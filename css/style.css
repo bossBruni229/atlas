@@ -3782,6 +3782,15 @@ footer ul.social_icons {
 	text-align: center;
 }
 
+.inner_banner_section_digitalisation {
+	background: url('../images/layout_img/terre.jpg');
+	min-height: 500px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	text-align: center;
+}
+
 .inner_banner_section::after {
 	width: 100%;
 	height: 100%;
@@ -5397,5 +5406,197 @@ body:not(.device-touch) .button.button-reveal span {
 
 .feature-box.media-box.fbox-bg .fbox-media img { border-radius: 5px 5px 0 0; }
 
+/* ----------------------------------------------------------------
+	Process Steps
+-----------------------------------------------------------------*/
+
+.process-steps {
+	margin: 0 0 40px;
+	list-style: none;
+}
+
+.process-steps li {
+	float: left;
+	position: relative;
+	width: 25%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.process-steps.process-2 li { width: 50%; }
+.process-steps.process-3 li { width: 33.33%; }
+.process-steps.process-5 li { width: 20%; }
+
+.process-steps li .i-circled { margin-bottom: 0 !important; }
+
+.process-steps li .i-bordered { background-color: #FFF; }
+
+.process-steps li h5 {
+	margin: 15px 0 0 0;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.process-steps li.active h5,
+.process-steps li.ui-tabs-active h5 {
+	font-weight: 600;
+	color: #4B75BA;
+}
+
+.process-steps li.active a,
+.process-steps li.ui-tabs-active a {
+	background-color: #4B75BA !important;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-color: #4B75BA !important;
+}
+
+.process-steps li:before,
+.process-steps li:after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left: 0;
+	margin-left: -26px;
+	width: 50%;
+	border-top: 1px dashed #DDD;
+}
+
+.process-steps li:after {
+	left: auto;
+	right: 0;
+	margin: 0 -26px 0 0;
+}
+
+.process-steps li:first-child:before,
+.process-steps li:last-child:after { display: none; }
+
+/* ----------------------------------------------------------------
+	Dark Scheme
+-----------------------------------------------------------------*/
+
+.dark .fancy-title h1,
+.dark .fancy-title h2,
+.dark .fancy-title h3,
+.dark .fancy-title h4,
+.dark .fancy-title h5,
+.dark .fancy-title h6 { background-color: #383838; }
+
+.dark .fancy-title.title-double-border:before,
+.dark .fancy-title.title-border:before,
+.dark .fancy-title.title-border-color:before,
+.dark .fancy-title.title-border:before { border-top-color: rgba(255,255,255,0.15); }
+
+.dark .divider { color: rgba(255,255,255,0.15); }
+
+.dark .divider:after,
+.dark .divider.divider-center:before,
+.dark .divider.divider-center.divider-short:before { border-top-color: rgba(255,255,255,0.1); }
+
+.dark .divider.divider-rounded,
+.dark .divider.divider-border { color: #999; }
+
+.dark .divider.divider-rounded i,
+.dark .divider.divider-border i { background-color: rgba(255,255,255,0.1); }
+
+.dark .divider.divider-border i {
+	background-color: transparent;
+	border-color: rgba(255,255,255,0.15);
+}
+
+.dark .quote:before { color: rgba(255,255,255,0.1); }
+
+.dark .highlight { background-color: rgba(0,0,0,0.2); }
+
+.dark .top-advert {
+	border-left-color: rgba(255,255,255,0.1);
+	border-right-color: rgba(255,255,255,0.1);
+}
+
+.dark .error404 { color: rgba(255,255,255,0.15); }
+
+.dark.error404-wrap .form-control::-webkit-input-placeholder { color: #888; }
+.dark.error404-wrap .form-control::-moz-placeholder { color: #888; }
+.dark.error404-wrap .form-control:-ms-input-placeholder { color: #888; }
+
+.dark .preloader { background-color: rgba(0,0,0,0.2); }
+
+.dark .preloader,
+.dark .preloader2,
+.dark .form-process { background-image: url('../images/preloader-dark.gif'); }
+
+.dark .form-process { background-color: transparent; }
+
+
+#footer.dark,
+.dark #footer {
+	background-color: #333;
+	color: #CCC;
+	border-top-color: rgba(0,0,0,0.2);
+}
+
+.dark #copyrights {
+	background-color: rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.25);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.dark #copyrights i.footer-icon { color: rgba(255,255,255,0.3); }
+
+.dark .copyright-links a {
+	color: rgba(255,255,255,0.25);
+	border-bottom-color: rgba(255,255,255,0.25);
+}
+
+.dark .copyright-links a:hover {
+	color: rgba(255,255,255,0.35);
+	border-bottom-color: rgba(255,255,255,0.35);
+}
+
+
+.dark .footer-widgets-wrap a { color: #CCC; }
+
+.dark .footer-widgets-wrap a:hover { color: #999; }
+
+.dark .sidebar-widgets-wrap .widget,
+body.dark #side-panel .widget,
+body #side-panel.dark .widget { border-top-color: rgba(255,255,255,0.1); }
+
+body.dark #side-panel #side-panel-trigger-close a,
+body #side-panel.dark #side-panel-trigger-close a {
+	background-color: rgba(0,0,0,0.2);
+	color: #FFF;
+}
+
+.dark .widget h4 { color: #DDD; }
+
+.dark .widget p { opacity: 0.8; }
+
+.dark .tagcloud a {
+	color: #999;
+	border-color: transparent;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.dark .tagcloud a:hover {
+	border-color: transparent !important;
+	background-color: #4B75BA;
+	color: #FFF !important;
+}
+
+.dark .widget_recent_comments li { background-image: url("../images/icons/widget-comment-dark.png"); }
+
+.dark .widget_nav_menu li a,
+.dark .widget_links li a,
+.dark .widget_meta li a,
+.dark .widget_archive li a,
+.dark .widget_recent_comments li a,
+.dark .widget_recent_entries li a,
+.dark .widget_categories li a,
+.dark .widget_pages li a,
+.dark .widget_rss li a {
+	color: #CCC;
+	background-image: url("../images/icons/widget-link-dark.png");
+}
 
 
